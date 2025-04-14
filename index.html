@@ -6,8 +6,8 @@
   <title>EE's Coding Tools</title>
   <link rel="stylesheet" href="theme_site_style.css">
   <script>
-    function showInstructions() {
-      const instructions = document.getElementById('instructions');
+    function showInstructions(id) {
+      const instructions = document.getElementById(id);
       instructions.style.display = 'block'; // Show instructions when clicking download
     }
   </script>
@@ -29,9 +29,9 @@
       <div class="preview">
         <img src="rainbow_theme_preview.jpg" alt="Rainbow Transparent Spotify Theme Preview" width="300">
       </div>
-      <a class="download" href="RainbowTransparent.zip" download onclick="showInstructions()">Download</a>
-      <!-- Hidden instructions section -->
-      <div id="instructions" style="display: none; background-color: #1c1c1c; padding: 15px; margin-top: 20px; border-radius: 8px;">
+      <a class="download" href="RainbowTransparent.zip" download onclick="showInstructions('spotifyInstructions')">Download</a>
+      <!-- Hidden instructions for Spotify -->
+      <div id="spotifyInstructions" style="display: none; background-color: #1c1c1c; padding: 15px; margin-top: 20px; border-radius: 8px;">
         <h4>How to Install the Rainbow Transparent Spotify Theme</h4>
         <ol>
           <li>Download the theme by clicking the button above.</li>
@@ -48,8 +48,22 @@
   <section id="nitro" class="section">
     <h2>Nitro Type</h2>
     <div class="theme-card">
-      <h3>Coming Soon!</h3>
-      <p>Stay tuned for a stylish Nitro Type theme with clean UI and fun effects.</p>
+      <h3>Nitro Type Rainbow V2.5</h3>
+      <p>A vibrant, rainbow-themed design for Nitro Type users. Fun and colorful UI enhancements!</p>
+      <div class="preview">
+        <img src="nitro_type_preview.jpg" alt="Nitro Type Rainbow V2.5 Preview" width="300">
+      </div>
+      <a class="download" href="nitro_type_rainbow_v2.5.zip" download onclick="showInstructions('nitroInstructions')">Download</a>
+      <!-- Hidden instructions for Nitro Type -->
+      <div id="nitroInstructions" style="display: none; background-color: #1c1c1c; padding: 15px; margin-top: 20px; border-radius: 8px;">
+        <h4>How to Install the Nitro Type Rainbow V2.5 Theme</h4>
+        <ol>
+          <li>Download the theme by clicking the button above.</li>
+          <li>Go to your <code>userstyles</code> folder (or wherever your Nitro Type theme files are located).</li>
+          <li>Place the downloaded CSS file into the theme directory.</li>
+          <li>Refresh or restart Nitro Type to see the vibrant new rainbow theme in action!</li>
+        </ol>
+      </div>
     </div>
   </section>
 </body>
