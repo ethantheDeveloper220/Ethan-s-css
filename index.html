@@ -6,9 +6,22 @@
   <title>EE's Coding Tools</title>
   <link rel="stylesheet" href="theme_site_style.css">
   <script>
-    function showInstructions(id) {
-      const instructions = document.getElementById(id);
-      instructions.style.display = 'block'; // Show instructions when clicking download
+    const correctKey = 'd3sF%j$r;4wH]f#_V97-JN'; // The key value
+
+    function verifyKey() {
+      const userKey = document.getElementById('keyInput').value;
+      const message = document.getElementById('keyMessage');
+      const downloadButton = document.getElementById('downloadButton');
+
+      if (userKey === correctKey) {
+        message.textContent = 'Key verified! You may now download the theme.';
+        message.style.color = 'green';
+        downloadButton.style.display = 'block'; // Show the download button
+      } else {
+        message.textContent = 'Invalid key. Please try again.';
+        message.style.color = 'red';
+        downloadButton.style.display = 'none'; // Hide the download button if key is incorrect
+      }
     }
   </script>
 </head>
@@ -29,19 +42,12 @@
       <div class="preview">
         <img src="rainbow_theme_preview.jpg" alt="Rainbow Transparent Spotify Theme Preview" width="300">
       </div>
-      <a class="download" href="RainbowTransparent.zip" download onclick="showInstructions('spotifyInstructions')">Download</a>
-      <!-- Hidden instructions for Spotify -->
-      <div id="spotifyInstructions" style="display: none; background-color: #1c1c1c; padding: 15px; margin-top: 20px; border-radius: 8px;">
-        <h4>How to Install the Rainbow Transparent Spotify Theme</h4>
-        <ol>
-          <li>Download the theme by clicking the button above.</li>
-          <li>Extract the files to your <code>.spicetify/Themes</code> directory.</li>
-          <li>Open PowerShell and run the following commands:</li>
-          <pre>spicetify config current_theme RainbowTransparent</pre>
-          <pre>spicetify apply</pre>
-          <li>Your Spotify theme should now be updated with the new Rainbow Transparent look!</li>
-        </ol>
-      </div>
+      <p>Enter the key to access the download:</p>
+      <input type="text" id="keyInput" placeholder="Enter your key here">
+      <button onclick="verifyKey()">Verify Key</button>
+      <p id="keyMessage"></p>
+      <!-- Hidden download button, shown only after key verification -->
+      <a id="downloadButton" class="download" href="RainbowTransparent.zip" download style="display: none;">Download</a>
     </div>
   </section>
 
@@ -53,17 +59,12 @@
       <div class="preview">
         <img src="nitro_type_preview.jpg" alt="Nitro Type Rainbow V2.5 Preview" width="300">
       </div>
-      <a class="download" href="https://userstyles.world/style/19527/nitro-type-rainbow-v2-5" download onclick="showInstructions('nitroInstructions')">Download</a>
-      <!-- Hidden instructions for Nitro Type -->
-      <div id="nitroInstructions" style="display: none; background-color: #1c1c1c; padding: 15px; margin-top: 20px; border-radius: 8px;">
-        <h4>How to Install the Nitro Type Rainbow V2.5 Theme</h4>
-        <ol>
-          <li>Download the theme by clicking the button above.</li>
-          <li>Go to your <code>userstyles</code> folder (or wherever your Nitro Type theme files are located).</li>
-          <li>Place the downloaded CSS file into the theme directory.</li>
-          <li>Refresh or restart Nitro Type to see the vibrant new rainbow theme in action!</li>
-        </ol>
-      </div>
+      <p>Enter the key to access the download:</p>
+      <input type="text" id="keyInputNitro" placeholder="Enter your key here">
+      <button onclick="verifyKey()">Verify Key</button>
+      <p id="keyMessageNitro"></p>
+      <!-- Hidden download button for Nitro Type, shown only after key verification -->
+      <a id="downloadButtonNitro" class="download" href="nitro_type_rainbow_v2.5.zip" download style="display: none;">Download</a>
     </div>
   </section>
 </body>
