@@ -4,7 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EE's Coding Tools</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="theme_site_style.css">
+  <script>
+    function showInstructions() {
+      const instructions = document.getElementById('instructions');
+      instructions.style.display = 'block'; // Show instructions when clicking download
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -23,7 +29,19 @@
       <div class="preview">
         <img src="rainbow_theme_preview.jpg" alt="Rainbow Transparent Spotify Theme Preview" width="300">
       </div>
-      <a class="download" href="RainbowTransparent.zip" download>Download</a>
+      <a class="download" href="RainbowTransparent.zip" download onclick="showInstructions()">Download</a>
+      <!-- Hidden instructions section -->
+      <div id="instructions" style="display: none; background-color: #1c1c1c; padding: 15px; margin-top: 20px; border-radius: 8px;">
+        <h4>How to Install the Rainbow Transparent Spotify Theme</h4>
+        <ol>
+          <li>Download the theme by clicking the button above.</li>
+          <li>Extract the files to your <code>.spicetify/Themes</code> directory.</li>
+          <li>Open PowerShell and run the following commands:</li>
+          <pre>spicetify config current_theme RainbowTransparent</pre>
+          <pre>spicetify apply</pre>
+          <li>Your Spotify theme should now be updated with the new Rainbow Transparent look!</li>
+        </ol>
+      </div>
     </div>
   </section>
 
