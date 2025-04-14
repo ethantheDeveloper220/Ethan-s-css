@@ -1,0 +1,64 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #121212;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(to right, #ff00cc, #3333ff);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  background-color: #1e1e1e;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.section {
+  padding: 30px;
+}
+
+.theme-card {
+  background: #1c1c1c;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.theme-card h3 {
+  margin-top: 0;
+}
+
+.download {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #3333ff;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.download:hover {
