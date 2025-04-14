@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lya's CSS Themes</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #121212;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(to right, #ff00cc, #3333ff);
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      background-color: #1e1e1e;
+    }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .section {
+      padding: 30px;
+    }
+    .theme-card {
+      background: #1c1c1c;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .theme-card h3 {
+      margin-top: 0;
+    }
+    .download {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #3333ff;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .download:hover {
+      background: #5555ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lya's Custom CSS Themes</h1>
+  </header>
+  <nav>
+    <a href="#spotify">Spotify Theme</a>
+    <a href="#nitro">Nitro Type</a>
+  </nav>
+
+  <section id="spotify" class="section">
+    <h2>Spotify Theme</h2>
+    <div class="theme-card">
+      <h3>Rainbow Transparent</h3>
+      <p>A colorful animated rainbow theme for Spicetify with translucent UI.</p>
+      <a class="download" href="RainbowTransparent.zip" download>Download</a>
+    </div>
+  </section>
+
+  <section id="nitro" class="section">
+    <h2>Nitro Type</h2>
+    <div class="theme-card">
+      <h3>Coming Soon!</h3>
+      <p>Stay tuned for a stylish Nitro Type theme with clean UI and fun effects.</p>
+    </div>
+  </section>
+</body>
+</html>
