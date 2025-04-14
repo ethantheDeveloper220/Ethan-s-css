@@ -74,3 +74,55 @@ nav a:hover {
   max-width: 100%;
   border-radius: 8px;
 }
+
+#instructions {
+  background-color: #1c1c1c;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+#instructions h4 {
+  font-size: 1.5rem;
+  color: #ffcc00;
+}
+
+#instructions ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+#instructions pre {
+  background-color: #333;
+  color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: monospace;
+  overflow-x: auto;
+}
+
+#nitroInstructions {
+  background-color: #1c1c1c;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+#nitroInstructions h4 {
+  font-size: 1.5rem;
+  color: #ffcc00;
+}
+
+#nitroInstructions ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+#nitroInstructions pre {
+  background-color: #333;
+  color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: monospace;
+  overflow-x: auto;
+}
