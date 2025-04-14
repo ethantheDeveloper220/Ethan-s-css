@@ -75,40 +75,35 @@ nav a:hover {
   border-radius: 8px;
 }
 
-#instructions {
+/* Modal Styles */
+#keyModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  padding-top: 100px;
+}
+
+.modal-content {
   background-color: #1c1c1c;
-  padding: 15px;
-  margin-top: 20px;
-  border-radius: 8px;
+  padding: 20px;
+  margin: auto;
+  border-radius: 10px;
+  width: 40%;
+  text-align: center;
 }
 
-#instructions h4 {
-  font-size: 1.5rem;
-  color: #ffcc00;
-}
-
-#instructions ol {
-  list-style-type: decimal;
-  padding-left: 20px;
-}
-
-#instructions pre {
-  background-color: #333;
-  color: #f0f0f0;
-  padding: 10px;
-  border-radius: 5px;
-  font-family: monospace;
-  overflow-x: auto;
-}
-
-/* Key system input styles */
-#keyInput, #keyInputNitro {
+#keyInput {
   padding: 10px;
   border: 1px solid #333;
   background-color: #222;
   color: #f0f0f0;
   border-radius: 6px;
-  width: 100%;
+  width: 80%;
   margin-top: 10px;
 }
 
@@ -119,7 +114,7 @@ button {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  width: 100%;
+  width: 80%;
   margin-top: 10px;
 }
 
@@ -127,34 +122,11 @@ button:hover {
   background-color: #5555ff;
 }
 
-#keyMessage, #keyMessageNitro {
+#keyMessage {
   margin-top: 10px;
   font-size: 1.2rem;
 }
 
 #keyMessage {
   font-weight: bold;
-}
-
-#keyMessageNitro {
-  font-weight: bold;
-}
-
-/* Responsive design adjustments */
-@media (max-width: 768px) {
-  .theme-card {
-    padding: 15px;
-  }
-
-  header h1 {
-    font-size: 1.5rem;
-  }
-
-  .preview img {
-    width: 80%;
-  }
-
-  button {
-    width: auto;
-  }
 }
