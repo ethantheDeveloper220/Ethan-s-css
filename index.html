@@ -5,39 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EE's Coding Tools</title>
   <link rel="stylesheet" href="theme_site_style.css">
-  <script>
-    const correctKey = 'd3sF%j$r;4wH]f#_V97-JN'; // The key value
-
-    function verifyKey() {
-      const userKey = document.getElementById('keyInput').value;
-      const message = document.getElementById('keyMessage');
-      const downloadButton = document.getElementById('downloadButton');
-      const downloadButtonNitro = document.getElementById('downloadButtonNitro');
-
-      if (userKey === correctKey) {
-        message.textContent = 'Key verified! You may now download the theme.';
-        message.style.color = 'green';
-        downloadButton.style.display = 'block'; // Show the download button for Spotify
-        downloadButtonNitro.style.display = 'block'; // Show the download button for Nitro Type
-        closeModal(); // Close the modal when key is correct
-      } else {
-        message.textContent = 'Invalid key. Please try again.';
-        message.style.color = 'red';
-        downloadButton.style.display = 'none'; // Hide the download button if key is incorrect
-        downloadButtonNitro.style.display = 'none'; // Hide the Nitro download button
-      }
-    }
-
-    // Close the modal if the user has entered the correct key
-    function closeModal() {
-      document.getElementById('keyModal').style.display = 'none';
-    }
-
-    // Show the modal on page load
-    window.onload = function() {
-      document.getElementById('keyModal').style.display = 'block';
-    };
-  </script>
 </head>
 <body>
   <header>
@@ -48,16 +15,6 @@
     <a href="#nitro">Nitro Type</a>
   </nav>
 
-  <!-- Key Input Modal -->
-  <div id="keyModal" class="modal">
-    <div class="modal-content">
-      <h2>Enter Key to Access Downloads</h2>
-      <input type="text" id="keyInput" placeholder="Enter your key here">
-      <button onclick="verifyKey()">Verify Key</button>
-      <p id="keyMessage"></p>
-    </div>
-  </div>
-
   <section id="spotify" class="section">
     <h2>Spotify Theme</h2>
     <div class="theme-card">
@@ -66,20 +23,39 @@
       <div class="preview">
         <img src="rainbow_theme_preview.jpg" alt="Rainbow Transparent Spotify Theme Preview" width="300">
       </div>
-      <a id="downloadButton" class="download" href="RainbowTransparent.zip" download style="display: none;">Download</a>
+      <a class="download" href="RainbowTransparent.zip" download>Download</a>
     </div>
   </section>
 
   <section id="nitro" class="section">
     <h2>Nitro Type</h2>
+
     <div class="theme-card">
       <h3>Nitro Type Rainbow V2.5</h3>
       <p>A vibrant, rainbow-themed design for Nitro Type users. Fun and colorful UI enhancements!</p>
       <div class="preview">
         <img src="nitro_type_preview.jpg" alt="Nitro Type Rainbow V2.5 Preview" width="300">
       </div>
-      <a id="downloadButtonNitro" class="download" href="nitro_type_rainbow_v2.5.zip" download style="display: none;">Download</a>
+      <a class="download" href="nitro_type_rainbow_v2.5.zip" download>Download</a>
     </div>
+
+    <div class="theme-card">
+      <h3>Retro Theme</h3>
+      <p>A nostalgic, neon-green retro theme inspired by classic 8-bit arcade styles.</p>
+      <div class="preview">
+        <img src="retro_nitro_type_preview.jpg" alt="Retro Nitro Type Preview" width="300">
+      </div>
+      <a class="download" href="themes/RetroNitroType.user.css" download>Download Retro Nitro Type Theme</a>
+      <details>
+        <summary>How to install</summary>
+        <ol>
+          <li>Install the Stylus browser extension (for Chrome or Firefox)</li>
+          <li>Click the downloaded file or import it into Stylus</li>
+          <li>Make sure it's enabled for nitrotype.com</li>
+        </ol>
+      </details>
+    </div>
+
   </section>
 </body>
 </html>
